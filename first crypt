@@ -31,5 +31,7 @@ def getKey(password):
 
 def main():
     filename = raw_input("File to encrypt: ")
-print("done")
+    password = raw_input("Password: ")
+    encrypt(getKey(password), filename)
+        print("done")
 

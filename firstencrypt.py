@@ -9,7 +9,7 @@ def encrypt(filename ,key):
     IV= ''
 
     for i in range(16):
-        IV = chr(random.randint(0,0xFF))
+        IV += chr(random.randint(0,0xFF))
 
     encryptor= AES.new(key,AES.MODE_CBC,IV)
 
